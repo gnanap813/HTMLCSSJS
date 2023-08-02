@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple JavaScript</title>
+</head>
+<body>
+  <script>
+    console.log("Hello, World!");
+  </script>
+</body>
+</html>
+gnana prakash

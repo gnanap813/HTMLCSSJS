@@ -1,7 +1,0 @@
-git clone "url" (adding the repository into native machine)
-
-//Submit Commands
-git status
-git add .
-git commit -m "v1"
-git push

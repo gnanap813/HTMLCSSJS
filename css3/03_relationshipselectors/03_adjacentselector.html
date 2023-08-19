@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        div + p{
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+    section + p {
+        border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Para One</p>
+
+    <div>
+        <p>Para Two</p>
+    </div>
+
+    <p>Para Three</p>
+
+    <p>Para Four</p>
+
+    <p>Para Five</p>
+    <section> 
+        <p>Para Six</p>
+        <!-- when it is applied to last line it is not applicable to next -->
+    </section>
+    <p> Para six</p>
+</body>
+</html>

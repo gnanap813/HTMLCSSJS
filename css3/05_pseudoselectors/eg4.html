@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* pseudo selector combination of decendent selector and group selector*/
+        ol li:first-child, ol li:last-child{
+            border: 2px solid blue;
+            margin: 5px;
+            background-color: aqua;
+            color: red;
+            padding: 5px;
+        }
+        /* decendent selector */
+        div p b:last-child{
+            font-size: xx-large;
+            color: green;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+    </ol>
+
+    <div>
+        <p>
+            <b>Java</b>
+            <b>Python</b>
+            <b>JavaScript</b>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    section, div {
+    /* border: 2px solid blue; */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex: 1; 
+    background-color: orange;
+}
+section div{
+    height: 70px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+div:nth-child(1) {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex: 2;
+}
+p{
+    position: absolute;
+    left: 220px;
+    font-size: x-large;
+    
+}
+label{
+    font-size: x-large;
+}
+select{
+    border: none; 
+    background-color: lightcoral;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <img src="https://logos-world.net/wp-content/uploads/2020/05/Huawei-Logo.jpg">
+                <p>Electronics Company</p>
+            </div>
+            <div>
+                <label>LIGHTS</label>
+                <select>
+                    <optgroup label="lights">
+                        <option value="">LED light</option>
+                        <option value="">Decoration light</option>
+                        <option value="">ceiling light</option>
+                        <option value="">color light</option>
+                        <option value="">other</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>FANS</label>
+                <select>
+                    <optgroup label="fans">
+                        <option value="">ceiling fan</option>
+                        <option value="">Decoration fan</option>
+                        <option value="">table fan</option>
+                        <option value="">Bldc fan</option>
+                        <option value="">other</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>TV's</label>
+                <select>
+                    <optgroup label="TV's">
+                        <option value="">LED TV's</option>
+                        <option value="">OLED TV's</option>
+                        <option value="">Curved 4K OLED TV's</option>
+                        <option value="">Amoled Display</option>
+                        <option value="">other</option>
+                    </optgroup>
+                </select>
+            </div>
+        </section>
+    </header>
+</body>
+</html>

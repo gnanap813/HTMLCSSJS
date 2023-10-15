@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banner {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-direction: row;
+        }
+
+        #banner h1 {
+            font-size: 50px;
+        }
+
+        .content {
+            margin: auto;
+        }
+
+        .content ul {
+            line-height: 20px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content a {
+            background-color: rgb(66, 133, 242);
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            #banner {
+                flex-direction: column;
+            }
+            #banner h1 {
+                font-size: 20px;
+            }
+            #banner ul {
+                font-size: 16px;
+            }
+            .nav-links {
+                text-align: center;
+            }
+            .nav-links a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {}
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {}
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {}
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {}
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <div class="image">
+            <img src="https://www.digital-lync.com/images/training-course-mid.webp" width="90%" />
+        </div>
+        <div class="content">
+            <h1>India's #1 Training institute</h1>
+            <ul>
+                <li>50,000 Trained and Got Better Jobs</li>
+                <li>First Ever Hybrid Institute with Classroom & Online</li>
+                <li>Real time projects, Interviews and Job Support</li>
+            </ul>
+            <div class="nav-links">
+                <a>Contact Course Advisor</a>
+                <a>View Cources</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

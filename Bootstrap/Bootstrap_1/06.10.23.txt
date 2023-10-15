@@ -1,0 +1,30 @@
+Intro to Bootstrap 5.
+Grid System
+Typography
+Colors
+Tables
+Images
+Alerts
+Buttons
+Button Groups
+Badges, ProgressBars
+Pagination
+Dropdowns
+Navs,Navbar
+Forms, Input
+Carousel
+Modal
+Tooltip
+Popover
+
+Colors:
+
+.text-{primary | secondary | danger | warning | success | info | light | dark}
+
+.bg-{primary | secondary | danger | warning | success | info | light | dark}
+
+.btn-{primary | secondary | danger | warning | success | info | light | dark}
+
+.table-{primary | secondary | danger | warning | success | info | light | dark}
+
+.border-{primary | secondary | danger | warning | success | info | light | dark}

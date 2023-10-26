@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #border-image {
+            width: 400px;
+            height: 100px;
+            border: 10px solid black;
+            border-radius: 8px;
+            border-image: url('https://www.w3schools.com/cssref/border.png') 30 stretch;
+        }
+
+        #multiple-backgrounds {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            background-position: top left, top right, bottom right, bottom left;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-size: 100px, 100px, 100px, 100px;
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-top-left.svg),
+                url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-top-right.svg),
+                url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-bottom-right.svg),
+                url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-bottom-left.svg);
+        }
+
+        /* linearGradient */
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+
+        /* conic-gradient */
+
+        #grad2 {
+            height: 200px;
+            width: 400px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+
+        /* radialGradient */
+        #grad3 {
+            height: 150px;
+            width: 400px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+
+        #tinted-image {
+
+            width: 300px;
+            height: 200px;
+
+            background:
+                /* top, transparent red */
+                linear-gradient(rgba(255, 0, 0, 0.45),
+                    rgba(255, 0, 0, 0.45)),
+                /* bottom, image */
+                url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/owl1.jpg);
+        }
+
+        #c1 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: coral;
+            box-shadow: 10px 10px lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="border-image">
+        <p>Container</p>
+    </div><br>
+
+    <div id="multiple-backgrounds">
+
+    </div>
+    <br>
+    <div id="grad1">
+
+    </div>
+    <br>
+    <div id="grad2">
+
+    </div>
+    <br>
+    <div id="grad3">
+
+    </div>
+    <br>
+    <div id="tinted-image">
+
+    </div><br>
+
+    <div id="c1">A div element with a lightblue box-shadow</div>
+</body>
+
+</html>

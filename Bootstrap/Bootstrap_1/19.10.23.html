@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <svg height="210" width="500">
+        <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1"/>
+        Sorry, your browser does not support inline SVG.
+      </svg><hr>
+      <div id="chartContainer" style="height: 300px; width: 500px;"></div>
+      <canvas id="shapeCanvas" width="500" height="300"></canvas>
+
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "Digital Lync"
+                },
+                axisY: {
+                    title: "Enrollment count"
+                },
+                data: [{
+                    type: "column",
+                    showInLegend: true,
+                    legendMarkerColor: "grey",
+                    legendText: "Courses",
+                    dataPoints: [
+                        { y: 20, label: "Python" },
+                        { y: 12, label: "Java Script" },
+                        { y: 10, label: "Html" },
+                        { y: 18, label: "Css" },
+                        { y: 5, label: "PHP" },
+                        { y: 4, label: "Ruby" },
+                        { y: 9, label: "Devops" },
+                        { y: 19, label: "Java" }
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+
+        const canvas = document.getElementById('shapeCanvas')
+        const context = canvas.getContext('2d')
+
+        // //  rectangle 
+        // context.fillStyle = 'rgb(0,0,0)'
+        // context.fillRect(80 , 80, 150 ,150)
+
+         //  Circle
+         context.fillStyle = 'rgb(154,200,245)'
+        context.beginPath()
+        context.arc(250 ,150 ,50 , 0 , 2 * Math.PI)
+        context.fill()
+        // stroke for border in place of fill
+
+        // line
+        context.strokeStyle = 'rgb(154,200,245)'
+        context.lineWidth = 1
+        context.beginPath()
+        context.moveTo(200,200)
+        context.lineTo(150,250)
+
+        context.stroke()
+
+    </script>
+
+   
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+
+</html>

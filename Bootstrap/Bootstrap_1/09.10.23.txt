@@ -1,0 +1,10 @@
+Alerts
+Buttons
+Button Groups
+Badges, ProgressBars
+Pagination
+Dropdowns
+
+btn btn-{primary | secondary | success | danger | warning | light | dark | link}
+
+btn btn-outline-{primary | secondary | success | danger | warning | light | dark | link}

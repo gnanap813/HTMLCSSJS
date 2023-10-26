@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css" />
+
+    <style>
+        .shop-now {
+            background-color: rgb(177, 142, 174);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-warning d-none" role="alert">
+                    You have registered successfully, <a href="#" class="alert-link">Please Login!</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+
+                <button class="btn btn-success" onclick="toggleAlert()">Toggle Message</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-lg shop-now">Shop Now</button>
+
+    <button class="btn btn-outline-success">Choose File</button>
+
+    <div class="btn-group">
+        <div class="btn btn-primary">1</div>
+        <div class="btn btn-primary">2</div>
+        <div class="btn btn-primary">3</div>
+        <div class="btn btn-primary">4</div>
+    </div>
+
+
+    <button class="btn btn-success position-relative">Notifications <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            99+
+            <span class="visually-hidden">unread messages</span>
+        </span>
+    </button>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%;">
+            25%
+        </div>
+    </div>
+
+
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"> <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a></li>
+        </ul>
+    </nav>
+
+    <script>
+        let isVisible = false;
+        function toggleAlert() {
+            isVisible = !isVisible;
+            if (isVisible) {
+                document.getElementsByClassName('alert')[0].classList.remove('d-none');
+            } else {
+                document.getElementsByClassName('alert')[0].classList.add('d-none');
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

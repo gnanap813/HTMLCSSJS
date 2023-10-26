@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Current time: <span id="currentTime"></span></h2>
+    <h2>Session Time Left: <span id="timeleft"></span></h2>
+    <script>
+        setInterval(() => {
+            const dateObj = new Date()
+            const currentTimeStamp = dateObj.getDate() + '/' + (dateObj.getMonth() + 1) + '/' + dateObj.getFullYear() + '  ' + dateObj.getHours() + ':' + dateObj.getMinutes() + ':' + dateObj.getSeconds()
+            document.getElementById('currentTime').innerHTML = currentTimeStamp
+        }, 1000)
+
+        const worker = new Worker('./20.10.23.js')
+
+        worker.onmessage = (message) => {
+            if (message.data === 'Your session has been completed') {
+                alert(message.data)
+
+            } else {
+                document.getElementById('timeleft').innerHTML = message.data
+            }
+        }
+    </script>
+
+
+    <!-- <script>
+
+        self.postMessage('00:05')
+
+        const idleTime = 5
+        let completedTimeInSeconds = 0
+
+        const intervalFunc = setInterval(timer, 1000)
+
+        function timer() {
+            completedTimeInSeconds++
+            const timeLeftInSeconds = (idleTime - completedTimeInSeconds) % 60
+            const timeLeftInMins = parseInt((idleTime - completedTimeInSeconds) / 60)
+            const timeStr = `$(appendZero(timeLeftInMins)}:${ appendZero(timeLeftInSeconds) }`
+        if (idleTime < completedTimeInSeconds) {
+            clearInterval(intervalFunc)
+            postMessage('Your session has been completed')
+        } else {
+            postMessage(timeStr)
+        }
+    }
+    </script> -->
+</body>
+
+</html>

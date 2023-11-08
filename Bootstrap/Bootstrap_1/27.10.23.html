@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            border: 1px solid black;
+            padding: 10px;
+            width: 400px;
+            animation-name: custom-animation;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 6;
+            animation-direction: reverse;
+            position: relative;
+        } */
+
+        /* @keyframes custom-animation {
+            from{
+                background-color: green;
+            }
+            to{
+                background-color: red;
+            }
+        } */
+
+
+        /* @keyframes custom-animation {
+            0% {
+                background-color: green;
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                top: 0px;
+                left: 300px;
+            }
+
+            50% {
+                background-color: red;
+                top: 300px;
+                left: 300px;
+            }
+
+            75% {
+                background-color: skyblue;
+                top: 300px;
+                left: 0px;
+            }
+
+            100% {
+                background-color: palevioletred;
+                top: 0px;
+                left: 0px;
+            }
+        } */
+        /* 
+        .lds-ring {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border: 8px solid blue;
+            border-radius: 50%;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: blue transparent transparent transparent;
+        }
+
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+
+        @keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        } */
+
+        .lds-dual-ring {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-dual-ring:after {
+            content: " ";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid green;
+            border-color: green #fff transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <h2>Defination and Usage Paradox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem necessitatibus voluptate</p>
+    </div> -->
+
+
+    <div class="lds-dual-ring">
+       
+    </div>
+</body>
+
+</html>
